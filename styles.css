@@ -1,5 +1,8 @@
 .backgroundimage {
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center;  
+    background-image: url("UNCCH.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 400px;
 }
