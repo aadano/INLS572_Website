@@ -7,12 +7,10 @@ main {
     min-height: 400px;
 }
 .backgroundimage {
-        background-image: url("UNCCH.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 400px;
-        width: 600px;
-        -webkit-filter: blur(8px);
-        filter: blur(8px);
+    background-image: url("UNCCH.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
 }
