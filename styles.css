@@ -12,3 +12,10 @@ body::before {
     filter: blur(4px);
     z-index: -1;
 }
+.logoimage {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    max-width: 100px;
+    z-index: 1;
+}
