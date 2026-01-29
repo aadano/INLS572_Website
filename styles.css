@@ -1,14 +1,18 @@
-.header {
+header {
     text-align: center;
     margin: 20px 0;
 }
+main {
+    position: relative;
+    min-height: 400px;
+}
 .backgroundimage {
-    background-image: url("UNCCH.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 600px;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+        background-image: url("UNCCH.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 600px;
+        -webkit-filter: blur(8px);
+        filter: blur(8px);
 }
