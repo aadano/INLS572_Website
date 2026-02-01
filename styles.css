@@ -24,20 +24,29 @@ body::before {
     z-index: 1;
 }
 .instalogo {
-    
+    border-radius: 8px;
+    width: 200px;
+    height: 150px;
 }
 .ytlogo {
-    
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
 }
 .linkedlogo {
-    
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
 }
 .instagramlink {
-    
+    font-family: Roboto, Helvetica, sans-serif;
+    text-align: center;
 }
 .youtubelink {
-    
+    font-family: Roboto, Helvetica, sans-serif;
+    text-align: center;
 }
 .linkedinlink {
-    
+    font-family: Roboto, Helvetica, sans-serif;
+    text-align: center;
 }
