@@ -26,6 +26,10 @@ body::before {
 }
 main {
     color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+    padding: 20px;
 }
 .logoimage {
     position: absolute;
@@ -100,4 +104,5 @@ main {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
