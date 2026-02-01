@@ -91,3 +91,13 @@ main {
     font-family: Roboto, Helvetica, sans-serif;
     text-align: center;
 }
+.my-button {
+     background-color: #4B9CD3; /* UNC Blue */
+    color: white;              /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
