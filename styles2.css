@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* ── HEADER & NAV (Flexbox - outer layout) ── */
+header {
+  background-color: #001f4d;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;           /* Flexbox for nav links */
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #4B9CD3;
+}
+
+/* ── MAIN ── */
+main {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* ── INTRO SECTION ── */
+.intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #001f4d;
+}
+
+.intro p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.button-link {
+  display: inline-block;
+  background-color: #4B9CD3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 8px;
+  transition: background-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #2a7ab5;
+}
+
+/* ── SCHOOLS SECTION ── */
+.schools-section h2 {
+  font-size: 1.6rem;
+  color: #001f4d;
+  margin-bottom: 20px;
+}
+
+/* Outer Grid layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Each card uses Flexbox internally — this is your NESTED layout */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card h3 {
+  color: #001f4d;
+  font-size: 1.1rem;
+}
+
+.card p {
+  line-height: 1.6;
+  flex-grow: 1;  /* pushes the link to the bottom */
+}
+
+.card a {
+  color: #4B9CD3;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ── IMAGE + ASIDE SECTION (Flexbox) ── */
+.image-section {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+figure {
+  flex: 2;
+  min-width: 280px;
+}
+
+figure img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;       /* preserves aspect ratio */
+  border-radius: 8px;
+  display: block;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+aside {
+  flex: 1;
+  min-width: 200px;
+  background-color: #001f4d;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+aside h3 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+aside p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* ── FOOTER ── */
+footer {
+  background-color: #001f4d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 48px;
+}
+
+footer a {
+  color: #4B9CD3;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section {
+    flex-direction: column;
+  }
+}
