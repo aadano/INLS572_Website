@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* ── HEADER & NAV (Flexbox) ── */
+header {
+  background-color: #001f4d;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #4B9CD3;
+}
+
+/* ── MAIN ── */
+main {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ── INTRO SECTION ── */
+.intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #001f4d;
+}
+
+.intro p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+/* ── BUTTON ── */
+.button-link {
+  display: inline-block;
+  background-color: #4B9CD3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 8px;
+  transition: background-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #2a7ab5;
+}
+
+/* ── LIFE GRID (2-column CSS Grid — distinct layout from pages 1 and 2) ── */
+.life-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ── MAIN CONTENT COLUMN ── */
+.life-main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+article {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  font-size: 1.4rem;
+  color: #001f4d;
+  margin-bottom: 12px;
+}
+
+article p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+article ul {
+  margin: 0 0 16px 20px;
+}
+
+article li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* ── SIDEBAR (Aside) ── */
+aside {
+  background-color: #001f4d;
+  color: white;
+  padding: 24px;
+  border-radius: 8px;
+  position: sticky;
+  top: 20px;
+}
+
+aside h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+aside h3:first-child {
+  margin-top: 0;
+}
+
+aside p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  margin-bottom: 8px;
+}
+
+aside a {
+  color: #4B9CD3;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+/* ── FOOTER ── */
+footer {
+  background-color: #001f4d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 48px;
+}
+
+footer a {
+  color: #4B9CD3;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .life-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  aside {
+    position: static;
+  }
+}
