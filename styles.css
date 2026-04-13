@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-header {
-  justify-content: space-between;  /* change from center to space-between */
-}
 
 nav a {
   color: white;
@@ -38,7 +35,9 @@ header {
   background-color: #001f4d;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  box-sizing: border-box;
   color: white;
   font-size: 1.5rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
