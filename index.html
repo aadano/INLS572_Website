@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>UNC Chapel Hill</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <header>
@@ -36,6 +37,44 @@
       </div>
 
       <a href="https://admissions.unc.edu/" class="button-link">Get Started - Admissions</a>
+
+      <section class="chart-section">
+        <h2>UNC Chapel Hill by the Numbers</h2>
+        <p>The chart below highlights key student success metrics at UNC Chapel Hill, illustrating the university's strong commitment to academic excellence and graduate outcomes.</p>
+        <canvas id="unc-stats-chart" width="700" height="400"></canvas>
+      </section>
+
+      <script>
+        new Chart(document.querySelector("#unc-stats-chart"), {
+          type: 'bar',
+          data: {
+            labels: ["Graduation Rate", "Retention Rate", "Employment Rate"],
+            datasets: [{
+              label: "Percentage (%)",
+              backgroundColor: ["#4B9CD3", "#13294B", "#7BAFD4"],
+              data: [92, 97, 95]
+            }]
+          },
+          options: {
+            plugins: {
+              title: {
+                display: true,
+                text: "UNC Chapel Hill Student Success Metrics",
+                font: { size: 18 }
+              },
+              legend: { display: false }
+            },
+            scales: {
+              y: {
+                min: 85,
+                max: 100,
+                ticks: { callback: function(value) { return value + "%"; } },
+                title: { display: true, text: "Percentage (%)" }
+              }
+            }
+          }
+        });
+      </script>
     </main>
   </body>
 </html>
