@@ -43,7 +43,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  background-color: #4B9CD3;
+  background-color: #2a7ab5;
 }
 
 /* ── MAIN ── */
@@ -71,7 +71,7 @@ main {
 /* ── BUTTON ── */
 .button-link {
   display: inline-block;
-  background-color: #4B9CD3;
+  background-color: #13294B;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -82,7 +82,7 @@ main {
 }
 
 .button-link:hover {
-  background-color: #2a7ab5;
+  background-color: #0a1a30;
 }
 
 /* ── LIFE GRID (2-column CSS Grid — distinct layout from pages 1 and 2) ── */
