@@ -82,7 +82,7 @@ li {
 }
 .button-link {
   display: inline-block;
-  background-color: #4B9CD3;
+  background-color: #13294B;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -95,7 +95,7 @@ li {
 }
 
 .button-link:hover {
-  background-color: #2a7ab5;
+  background-color: #0a1a30;
 }
 
 .chart-section {
